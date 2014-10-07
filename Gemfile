@@ -1,12 +1,12 @@
-source "http://rubygems.org"
+source 'http://rubygems.org'
 # Add dependencies required to use your gem here.
 # Example:
 #   gem "activesupport", ">= 2.3.5"
 
 gem 'addressable'
-gem 'signet'
-gem 'faraday', '~> 0.8.8'
-gem 'money', '~> 5.1.1'    # https://github.com/RubyMoney/money
+gem 'signet', '~> 0'
+gem 'faraday', '~> 0.9.0'
+gem 'money', '~> 6.3.0'    # https://github.com/RubyMoney/money
 
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.

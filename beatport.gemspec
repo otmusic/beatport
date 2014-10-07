@@ -4,126 +4,42 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = "beatport"
-  s.version = "0.2.1"
+  s.name = 'beatport'
+  s.version = '0.2.1'
 
-  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Mateo Murphy"]
-  s.date = "2013-11-20"
-  s.description = "A ruby gem for accessing the beatport api"
-  s.email = "mateo.murphy@gmail.com"
-  s.extra_rdoc_files = [
-    "LICENSE.txt",
-    "README.md"
-  ]
-  s.files = [
-    ".document",
-    ".rspec",
-    "Gemfile",
-    "LICENSE.txt",
-    "README.md",
-    "Rakefile",
-    "VERSION",
-    "beatport.gemspec",
-    "lib/beatport.rb",
-    "lib/beatport/catalog.rb",
-    "lib/beatport/catalog/account_type.rb",
-    "lib/beatport/catalog/artist.rb",
-    "lib/beatport/catalog/audio_format.rb",
-    "lib/beatport/catalog/audio_format_fee.rb",
-    "lib/beatport/catalog/autocomplete.rb",
-    "lib/beatport/catalog/chart.rb",
-    "lib/beatport/catalog/chart_overview.rb",
-    "lib/beatport/catalog/country.rb",
-    "lib/beatport/catalog/currency.rb",
-    "lib/beatport/catalog/djprofile.rb",
-    "lib/beatport/catalog/dynamic_image.rb",
-    "lib/beatport/catalog/dynamic_images.rb",
-    "lib/beatport/catalog/feature.rb",
-    "lib/beatport/catalog/genre.rb",
-    "lib/beatport/catalog/home.rb",
-    "lib/beatport/catalog/image.rb",
-    "lib/beatport/catalog/images.rb",
-    "lib/beatport/catalog/item_type.rb",
-    "lib/beatport/catalog/key.rb",
-    "lib/beatport/catalog/keys.rb",
-    "lib/beatport/catalog/label.rb",
-    "lib/beatport/catalog/list.rb",
-    "lib/beatport/catalog/mix.rb",
-    "lib/beatport/catalog/mixed.rb",
-    "lib/beatport/catalog/part.rb",
-    "lib/beatport/catalog/recommendations.rb",
-    "lib/beatport/catalog/release.rb",
-    "lib/beatport/catalog/search.rb",
-    "lib/beatport/catalog/slide.rb",
-    "lib/beatport/catalog/slideshow.rb",
-    "lib/beatport/catalog/source_type.rb",
-    "lib/beatport/catalog/state.rb",
-    "lib/beatport/catalog/track.rb",
-    "lib/beatport/client.rb",
-    "lib/beatport/collection.rb",
-    "lib/beatport/config.rb",
-    "lib/beatport/error.rb",
-    "lib/beatport/item.rb",
-    "lib/beatport/price.rb",
-    "lib/beatport/support.rb",
-    "lib/beatport/support/inflector.rb",
-    "lib/beatport/support/middleware.rb",
-    "lib/beatport/support/parser.rb",
-    "lib/beatport/support/query_builder.rb",
-    "lib/beatport/support/url.rb",
-    "spec/beatport_spec.rb",
-    "spec/catalog/account_type_spec.rb",
-    "spec/catalog/artist_spec.rb",
-    "spec/catalog/audio_format_spec.rb",
-    "spec/catalog/autocomplete_spec.rb",
-    "spec/catalog/chart_overview_spec.rb",
-    "spec/catalog/chart_spec.rb",
-    "spec/catalog/country_spec.rb",
-    "spec/catalog/currency_spec.rb",
-    "spec/catalog/genre_spec.rb",
-    "spec/catalog/home_spec.rb",
-    "spec/catalog/item_type_spec.rb",
-    "spec/catalog/label_spec.rb",
-    "spec/catalog/mixed_spec.rb",
-    "spec/catalog/release_spec.rb",
-    "spec/catalog/search_spec.rb",
-    "spec/catalog/slide_spec.rb",
-    "spec/catalog/source_type_spec.rb",
-    "spec/catalog/track_spec.rb",
-    "spec/collection_spec.rb",
-    "spec/item_spec.rb",
-    "spec/price_spec.rb",
-    "spec/spec_helper.rb",
-    "spec/support/inflector_spec.rb",
-    "spec/support/query_builder_spec.rb"
-  ]
-  s.homepage = "http://github.com/mateomurphy/beatport"
-  s.licenses = ["MIT"]
-  s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.25"
-  s.summary = "ruby gem for accessing the beatport api"
+  s.required_rubygems_version = Gem::Requirement.new('>= 0') if s.respond_to? :required_rubygems_version=
+  s.authors = ['Mateo Murphy']
+  s.date = '2013-11-20'
+  s.description = 'A ruby gem for accessing the beatport api'
+  s.email = 'mateo.murphy@gmail.com'
+  s.extra_rdoc_files = %w(LICENSE.txt README.md)
+  s.files = %w(.document .rspec Gemfile LICENSE.txt README.md Rakefile VERSION beatport.gemspec lib/beatport.rb lib/beatport/catalog.rb lib/beatport/catalog/account_type.rb lib/beatport/catalog/artist.rb lib/beatport/catalog/audio_format.rb lib/beatport/catalog/audio_format_fee.rb lib/beatport/catalog/autocomplete.rb lib/beatport/catalog/chart.rb lib/beatport/catalog/chart_overview.rb lib/beatport/catalog/country.rb lib/beatport/catalog/currency.rb lib/beatport/catalog/djprofile.rb lib/beatport/catalog/dynamic_image.rb lib/beatport/catalog/dynamic_images.rb lib/beatport/catalog/feature.rb lib/beatport/catalog/genre.rb lib/beatport/catalog/home.rb lib/beatport/catalog/image.rb lib/beatport/catalog/images.rb lib/beatport/catalog/item_type.rb lib/beatport/catalog/key.rb lib/beatport/catalog/keys.rb lib/beatport/catalog/label.rb lib/beatport/catalog/list.rb lib/beatport/catalog/mix.rb lib/beatport/catalog/mixed.rb lib/beatport/catalog/part.rb lib/beatport/catalog/recommendations.rb lib/beatport/catalog/release.rb lib/beatport/catalog/search.rb lib/beatport/catalog/slide.rb lib/beatport/catalog/slideshow.rb lib/beatport/catalog/source_type.rb lib/beatport/catalog/state.rb lib/beatport/catalog/track.rb lib/beatport/client.rb lib/beatport/collection.rb lib/beatport/config.rb lib/beatport/error.rb lib/beatport/item.rb lib/beatport/price.rb lib/beatport/support.rb lib/beatport/support/inflector.rb lib/beatport/support/middleware.rb lib/beatport/support/parser.rb lib/beatport/support/query_builder.rb lib/beatport/support/url.rb spec/beatport_spec.rb spec/catalog/account_type_spec.rb spec/catalog/artist_spec.rb spec/catalog/audio_format_spec.rb spec/catalog/autocomplete_spec.rb spec/catalog/chart_overview_spec.rb spec/catalog/chart_spec.rb spec/catalog/country_spec.rb spec/catalog/currency_spec.rb spec/catalog/genre_spec.rb spec/catalog/home_spec.rb spec/catalog/item_type_spec.rb spec/catalog/label_spec.rb spec/catalog/mixed_spec.rb spec/catalog/release_spec.rb spec/catalog/search_spec.rb spec/catalog/slide_spec.rb spec/catalog/source_type_spec.rb spec/catalog/track_spec.rb spec/collection_spec.rb spec/item_spec.rb spec/price_spec.rb spec/spec_helper.rb spec/support/inflector_spec.rb spec/support/query_builder_spec.rb)
+  s.homepage = 'http://github.com/mateomurphy/beatport'
+  s.licenses = ['MIT']
+  s.require_paths = ['lib']
+  s.rubygems_version = '1.8.25'
+  s.summary = 'ruby gem for accessing the beatport api'
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<addressable>, [">= 0"])
-      s.add_runtime_dependency(%q<signet>, [">= 0"])
-      s.add_runtime_dependency(%q<faraday>, ["~> 0.8.8"])
-      s.add_runtime_dependency(%q<money>, ["~> 5.1.1"])
-      s.add_development_dependency(%q<bundler>, [">= 0"])
-      s.add_development_dependency(%q<webmock>, [">= 0"])
-      s.add_development_dependency(%q<jeweler>, [">= 0"])
-      s.add_development_dependency(%q<log_buddy>, [">= 0"])
-      s.add_development_dependency(%q<rspec>, [">= 0"])
-      s.add_development_dependency(%q<yard>, [">= 0"])
-      s.add_development_dependency(%q<vcr>, [">= 0"])
+      s.add_runtime_dependency(%q<addressable>, ['>= 0'])
+      s.add_runtime_dependency(%q<signet>, ['>= 0'])
+      s.add_runtime_dependency(%q<faraday>, ['~> 0.9.0'])
+      s.add_runtime_dependency(%q<money>, ['~> 6.3.0'])
+      s.add_development_dependency(%q<bundler>, ['>= 0'])
+      s.add_development_dependency(%q<webmock>, ['>= 0'])
+      s.add_development_dependency(%q<jeweler>, ['>= 0'])
+      s.add_development_dependency(%q<log_buddy>, ['>= 0'])
+      s.add_development_dependency(%q<rspec>, ['>= 0'])
+      s.add_development_dependency(%q<yard>, ['>= 0'])
+      s.add_development_dependency(%q<vcr>, ['>= 0'])
     else
-      s.add_dependency(%q<addressable>, [">= 0"])
-      s.add_dependency(%q<signet>, [">= 0"])
-      s.add_dependency(%q<faraday>, ["~> 0.8.8"])
-      s.add_dependency(%q<money>, ["~> 5.1.1"])
+      s.add_dependency(%q<addressable>, ['>= 0'])
+      s.add_dependency(%q<signet>, ['>= 0'])
+      s.add_dependency(%q<faraday>, ['~> 0.9.0'])
+      s.add_dependency(%q<money>, ['~> 6.3.0'])
       s.add_dependency(%q<bundler>, [">= 0"])
       s.add_dependency(%q<webmock>, [">= 0"])
       s.add_dependency(%q<jeweler>, [">= 0"])
@@ -135,8 +51,8 @@ Gem::Specification.new do |s|
   else
     s.add_dependency(%q<addressable>, [">= 0"])
     s.add_dependency(%q<signet>, [">= 0"])
-    s.add_dependency(%q<faraday>, ["~> 0.8.8"])
-    s.add_dependency(%q<money>, ["~> 5.1.1"])
+    s.add_dependency(%q<faraday>, ["~> 0.9.0"])
+    s.add_dependency(%q<money>, ["~> 6.3.0"])
     s.add_dependency(%q<bundler>, [">= 0"])
     s.add_dependency(%q<webmock>, [">= 0"])
     s.add_dependency(%q<jeweler>, [">= 0"])

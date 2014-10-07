@@ -6,13 +6,10 @@ module Beatport
     self.default_bank = Bank::VariableExchange.instance
 
     # Set the default currency for creating new +Money+ object.
-    self.default_currency = Currency.new("USD")
+    self.default_currency = Currency.new('USD')
 
     # Default to using i18n
     self.use_i18n = true
-
-    # Default to not using currency symbol assumptions when parsing
-    self.assume_from_symbol = false
 
     # Default to not using infinite precision cents
     self.infinite_precision = false
